@@ -1,15 +1,20 @@
 :root {
-  --default-background-color: hsl(202deg 27% 74%);
+  --default-background-color: hsl(202, 11%, 50%);
   --frost-color: hsla(0, 0%, 100%, 0.1);
   --dark-frost-color: hsla(200, 15%, 8%, 0.15);
   --text-color: white;
   --light-text-color: hsla(0, 0%, 100%, 0.5);
+
   --bkg-blue: hsl(214, 57%, 34%);
   --bkg-red: hsl(0, 38%, 37%);
   --bkg-orange: hsl(30, 46%, 39%);
   --bkg-green: hsl(120, 33%, 25%);
   --bkg-purple: hsl(251, 40%, 30%);
+
   --bkg-casebook: hsl(252, 38%, 38%);
+  --bkg-casebook-alt: hsl(178, 94%, 26%);
+  --bkg-arazoo: hsl(203 28% 50%);
+  --bkg-prsnt: hsl(9, 55%, 49%);
 
   --shadow-color: 0deg 0% 0%;
   --shadow-elevation-low: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.01),
@@ -151,6 +156,23 @@ body {
 
 .bkg-casebook {
   background-color: var(--bkg-casebook);
+  color: var(--text-color);
+}
+
+.bkg-casebook-alt {
+  background-color: var(--bkg-casebook-alt);
+  color: var(--text-color);
+}
+
+.bkg-arazoo {
+  --frost-color: var(--dark-frost-color);
+  background-color: var(--bkg-arazoo);
+  color: var(--text-color);
+}
+
+.bkg-prsnt {
+  --frost-color: var(--dark-frost-color);
+  background-color: var(--bkg-prsnt);
   color: var(--text-color);
 }
 
@@ -884,7 +906,11 @@ ul.plain {
     --bkg-orange: hsl(30, 46%, 31%);
     --bkg-green: hsl(120, 33%, 25%);
     --bkg-purple: hsl(251, 40%, 20%);
+
     --bkg-casebook: hsl(252, 38%, 28%);
+    --bkg-casebook-alt: hsl(178, 94%, 16%);
+    --bkg-arazoo: hsl(203 28% 30%);
+    --bkg-prsnt: hsl(9, 55%, 29%);
   }
 }
 
