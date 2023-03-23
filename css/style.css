@@ -187,6 +187,7 @@ nav {
   padding-inline: 2rem;
   border-radius: 4rem;
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -880,6 +881,12 @@ ul.plain {
   }
 }
 
+@media screen and (min-width: 701px) {
+  .hidden-not-xs {
+    display: none !important;
+  }
+}
+
 /* Phone */
 @media only screen and (max-width: 700px) {
   .text {
@@ -890,6 +897,20 @@ ul.plain {
   }
   .tile {
     font-size: 2em;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  nav {
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    inset-block-start: unset;
+    inset-block-end: 1rem;
+    inset-inline-start: unset;
+    inset-inline-end: 1rem;
   }
 }
 
