@@ -44,9 +44,11 @@
 
   <body class="bkg-default">
     <header>
+      <!-- On mobile, this nav might be too wide or might even look like it's mean to be centered but is broken -->
       <nav class="frost shadow-medium">
         <a href="#default">Chad Lavimoniere</a>
         <a href="#work">Selected work</a>
+        <!-- <a href="#contact">Contact</a> -->
       </nav>
     </header>
     <section
@@ -62,7 +64,8 @@
           data-wow-delay="0.25s"
           class="h1 margin-block-start-half wow fadeInUp"
         >
-          Product designer. Design systems guy. Tools-for-makers enthusiast.
+          Product designer. Design systems guy.<br />Tools-for-makers
+          enthusiast.
         </div>
       </div>
       <figure class="half small-fullWidth">
@@ -161,6 +164,8 @@
           </div>
         </div>
       </div>
+      <!-- This image should maybe appear between the logo and the company name
+        when on mobile? would require some pretty severe restructuring -->
       <figure class="image">
         <img
           alt=""
@@ -306,5 +311,11 @@
         />
       </figure>
     </section>
+
+    <!-- Contact section last; socials, email addr, etc. "ready to work together?" -->
+    <script src="js/console.js"></script>
+    <script>
+      welcome();
+    </script>
   </body>
 </html>
