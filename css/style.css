@@ -197,8 +197,13 @@ nav:hover {
   box-shadow: var(--shadow-elevation-high);
 }
 
-nav a {
+/* ------------ LINKS ------------ */
+
+a {
   color: inherit;
+}
+
+nav a {
   text-decoration: none;
   font-weight: 500;
   opacity: 0.75;
@@ -895,11 +900,21 @@ ul.plain {
   .xs-half {
     flex-basis: 49%;
   }
+  .xs-full {
+    flex-basis: 100%;
+  }
   .tile {
     font-size: 2em;
   }
   .hidden-xs {
     display: none !important;
+  }
+}
+
+/* Small phones */
+@media only screen and (max-width: 376px) {
+  :root {
+    font-size: 14px;
   }
 }
 
