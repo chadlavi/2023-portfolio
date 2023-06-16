@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- MORE META TAGS HERE FOR UNFURLING -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chadlavimoniere.com" />
+    <meta
+      property="og:title"
+      content="Chad Lavimoniere | Design system management"
+    />
+    <!-- <meta property="og:description" content="DESCRIPTION" /> -->
+    <!-- <meta property="og:image" content="IMG_URL" /> -->
+
+    <meta name="twitter:card" content="summary" />
+    <!-- alternatively: -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta name="twitter:domain" value="chadlavimoniere.com" />
+    <meta
+      name="twitter:title"
+      value="Chad Lavimoniere | Design system management"
+    />
+    <!-- <meta name="twitter:description" value="DESCRIPTION" /> -->
+    <!-- <meta name="twitter:image" content="IMG_URL" /> -->
+    <meta name="twitter:url" value="https://chadlavimoniere.com" />
+    <!-- <meta name="twitter:label1" value="Label" /> -->
+    <!-- <meta name="twitter:data1" value="Value" /> -->
+    <!-- <meta name="twitter:label2" value="Label" /> -->
+    <!-- <meta name="twitter:data2" value="Value" /> -->
+    <!-- END META TAGS -->
+
+    <title>Chad Lavimoniere | Design system management</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/wow-rewrite.js"></script>
+    <!-- <script src="js/scroll.js"></script> -->
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body class="bkg-casebook">
+    <header>
+      <nav class="frost shadow-medium">
+        <a class="hidden-xs" href="./index.html">Chad Lavimoniere</a>
+        <a href="./index.html#work">Work</a>
+        <a href="./Chad-Lavimoniere-Resume.pdf" target="_blank">Resume</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="article wow fadeInUp flex-row responsive gap-lg">
+      <div class="flex-column gap-sm">
+        <div class="wow fadeInUp">
+          <img alt="" srcset="./images/casebook-logo@2x.png 2x" />
+          <h1 class="margin-block-start-0">
+            Building an automation engine for social work
+          </h1>
+          <p>
+            Social workers usually have too many cases and not enough time; but
+            they also have rigid documentation requirements, which means they
+            spend hours of their own time after work getting caught up on
+            paperwork and manually tracking their clients' progress. This can
+            lead to burn-out (as an industry, social workers have a very high
+            turnover rate) and mistakes. In social work, a client's life is
+            literally on the line, and one paperwork mistake made by a tired,
+            overworked social worker can have serious negative consequences.
+          </p>
+          <p>
+            At Casebook, a startup that makes integrated case management
+            software for social workers, my team identified a significant
+            opportunity to improve the workflow of social workers by building an
+            automation engine in Casebook that reduces complexity and repetitive
+            work, and increases procedural consistency.
+          </p>
+          <h2>Research</h2>
+          <p>
+            Over the summer of 2020, the lead product manager and I conducted
+            several interviews with users and joined new customer onboarding
+            calls to learn about our users' repeatable processes.
+          </p>
+          <p>
+            All the folks we spoke with could clearly describe at least 3-5
+            high-level processes that are well-defined within their practice and
+            common to most of their cases.
+          </p>
+          <ul>
+            <li>most of these processes are tracked on paper, if at all</li>
+            <li>
+              almost all of these processes may need to be ended early or
+              abandoned
+            </li>
+            <li>
+              Some steps in these processes are required, some are optional
+            </li>
+            <li>
+              there are always exceptions! sometimes a supervisor needs to be
+              able to skip required parts of a process or add in new ones
+            </li>
+            <li>
+              some processes (and some steps within those processes) have hard
+              deadlines that need to be tracked
+            </li>
+          </ul>
+          <p>
+            The vast number of steps, possible changes, contingencies and the
+            need to document it all leads to inconsistencies, errors, and social
+            worker burnout. Our customers needed a way to keep track of all of
+            this in a systematic way.
+          </p>
+          <h2>Making complex things simple</h2>
+          <p>
+            The feature we built in response to this need allowed admin users to
+            model real-world repeatable processes in Casebook with task lists
+            and create event-based triggers to automatically initiate them.
+          </p>
+          <p>
+            For example, an administrator at an agency that helps unhoused
+            minors could create a "safe living situation" checklist that starts
+            automatically for every new client, or an "independent living
+            transition" workflow for kids who age out of the system, which would
+            start automatically based on the client's age.
+          </p>
+          <p>
+            This enables social workers to centralize their work. Each case or
+            client record has a list of all the actions that need to be taken
+            next, and the social worker can see the list of all their tasks
+            across cases on their home dashboard. What was previously a stack of
+            paper files, several different spreadsheets, and sometimes post-it
+            notes on a social worker's desk is now a clear set of digitized,
+            prioritized tasks.
+          </p>
+          <h2>Reducing repetitive work</h2>
+          <p>
+            To reduce repetitive documentation work, I designed tasks in
+            Casebook to be action-oriented. Tasks that require filling out forms
+            or uploading files automatically mark themselves complete when those
+            actions are taken. This means social workers do not need to spend
+            extra time documenting that they completed a paper form or received
+            a document from a client; the task marks itself complete when the
+            social worker enters that data into Casebook.
+          </p>
+          <h2>Increasing consistency and accuracy</h2>
+          <p>
+            As the social worker no longer needs to remember which steps to take
+            on each case, they are prompted to complete the same steps for the
+            same situation each time it arises. This leads to a higher standard
+            of care for clients.
+          </p>
+          <p>
+            Centrally administered settings for automation flows also means that
+            changes in an organization's processes can be implemented right
+            away, without relying on social workers to remember new steps or
+            changes to existing steps.
+          </p>
+          <p>
+            Adding automated workflows to Casebook also increased transparency
+            for supervisors. Instead of waiting for a check-in meeting or asking
+            the social worker to set aside time to write up a progress report,
+            supervisors can see the current state of all of their workers' cases
+            in real time.
+          </p>
+          <h2>Adding business value</h2>
+          <p>
+            The Workflows feature was shipped in October 2020, and added
+            significant business value to Casebook. More than two dozen deals
+            that were pending in the fall of 2020 were successfully closed
+            because of the release of workflows, and since then about 10,000
+            workflows are run every year by Casebook users.
+          </p>
+          <p>
+            Workflows have been a significant subscription upgrade vector for
+            Casebook. Customers can configure a certain number of automated
+            workflows at each pricing tier; almost 24% of upgrading customers
+            cite the ability to automate more of their processes as a
+            contributing factor in their subscription upgrade.
+          </p>
+          <h2>Growing the feature</h2>
+          <p>
+            Automated workflows were initially added to case management in
+            Casebook, but have since been extended to Casebook's call
+            center/intake application for automating follow-ups from first
+            contacts and referrals.
+          </p>
+          <p>
+            We also turned Tasks into a stand-alone feature, allowing social
+            workers to create one-off tasks on their cases and client records
+            outside of pre-determined workflows. This enables our users to track
+            all of their to-do list items in one place.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/console.js"></script>
+    <script>
+      welcome();
+    </script>
+  </body>
+</html>
