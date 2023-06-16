@@ -7,7 +7,6 @@
   --bkg-casebook: hsl(252, 38%, 28%);
   --bkg-green: hsl(120, 33%, 25%);
   --bkg-orange: hsl(30, 46%, 31%);
-  --bkg-prsnt: hsl(9, 55%, 29%);
   --bkg-purple: hsl(251, 40%, 20%);
   --bkg-red: hsl(0, 38%, 27%);
   --dark-frost-color: hsla(200, 15%, 8%, 0.1);
@@ -167,12 +166,6 @@ body {
 .bkg-arazoo {
   --frost-color: var(--dark-frost-color);
   background-color: var(--bkg-arazoo);
-  color: var(--text-color);
-}
-
-.bkg-prsnt {
-  --frost-color: var(--dark-frost-color);
-  background-color: var(--bkg-prsnt);
   color: var(--text-color);
 }
 
@@ -961,7 +954,6 @@ ul.plain {
     --bkg-casebook: hsl(252, 38%, 38%);
     --bkg-green: hsl(120, 33%, 25%);
     --bkg-orange: hsl(30, 46%, 39%);
-    --bkg-prsnt: hsl(9, 55%, 49%);
     --bkg-purple: hsl(251, 40%, 30%);
     --bkg-red: hsl(0, 38%, 37%);
     --dark-frost-color: hsla(200, 15%, 8%, 0.15);
