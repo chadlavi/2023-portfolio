@@ -1,23 +1,22 @@
 :root {
   font-size: 18px;
-  --default-background-color: hsl(202, 11%, 50%);
-  --frost-color: hsla(0, 0%, 100%, 0.1);
-  --dark-frost-color: hsla(200, 15%, 8%, 0.15);
-  --text-color: white;
-  --light-text-color: hsla(0, 0%, 100%, 0.5);
 
-  --bkg-blue: hsl(214, 57%, 34%);
-  --bkg-red: hsl(0, 38%, 37%);
-  --bkg-orange: hsl(30, 46%, 39%);
+  --bkg-arazoo: hsl(203 28% 30%);
+  --bkg-blue: hsl(214, 57%, 24%);
+  --bkg-casebook-alt: hsl(178, 94%, 16%);
+  --bkg-casebook: hsl(252, 38%, 28%);
   --bkg-green: hsl(120, 33%, 25%);
-  --bkg-purple: hsl(251, 40%, 30%);
+  --bkg-orange: hsl(30, 46%, 31%);
+  --bkg-prsnt: hsl(9, 55%, 29%);
+  --bkg-purple: hsl(251, 40%, 20%);
+  --bkg-red: hsl(0, 38%, 27%);
+  --dark-frost-color: hsla(200, 15%, 8%, 0.1);
+  --default-background-color: hsl(201, 27%, 19%);
+  --frost-color: hsla(0, 0%, 50%, 0.1);
+  --light-text-color: hsla(0, 0%, 100%, 0.5);
+  --shadow-color: 0deg 0% 10%;
+  --text-color: hsl(36, 10%, 80%);
 
-  --bkg-casebook: hsl(252, 38%, 38%);
-  --bkg-casebook-alt: hsl(178, 94%, 26%);
-  --bkg-arazoo: hsl(203 28% 50%);
-  --bkg-prsnt: hsl(9, 55%, 49%);
-
-  --shadow-color: 0deg 0% 0%;
   --shadow-elevation-low: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.01),
     0.4px 0.8px 1.3px -0.2px hsl(var(--shadow-color) / 0.04),
     0.8px 1.6px 2.6px -0.4px hsl(var(--shadow-color) / 0.08);
@@ -951,26 +950,25 @@ ul.plain {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: light) {
   :root {
-    --default-background-color: hsl(201, 27%, 19%);
-    --text-color: hsl(36, 10%, 80%);
-    --frost-color: hsla(0, 0%, 50%, 0.1);
-    --shadow-color: 0deg 0% 10%;
-    --dark-frost-color: hsla(200, 15%, 8%, 0.1);
-    --light-text-color: hsla(0, 0%, 100%, 0.5);
-    --bkg-blue: hsl(214, 57%, 24%);
-    --bkg-red: hsl(0, 38%, 27%);
-    --bkg-orange: hsl(30, 46%, 31%);
+    --bkg-arazoo: hsl(203 28% 50%);
+    --bkg-blue: hsl(214, 57%, 34%);
+    --bkg-casebook-alt: hsl(178, 94%, 26%);
+    --bkg-casebook: hsl(252, 38%, 38%);
     --bkg-green: hsl(120, 33%, 25%);
-    --bkg-purple: hsl(251, 40%, 20%);
-
-    --bkg-casebook: hsl(252, 38%, 28%);
-    --bkg-casebook-alt: hsl(178, 94%, 16%);
-    --bkg-arazoo: hsl(203 28% 30%);
-    --bkg-prsnt: hsl(9, 55%, 29%);
+    --bkg-orange: hsl(30, 46%, 39%);
+    --bkg-prsnt: hsl(9, 55%, 49%);
+    --bkg-purple: hsl(251, 40%, 30%);
+    --bkg-red: hsl(0, 38%, 37%);
+    --dark-frost-color: hsla(200, 15%, 8%, 0.15);
+    --default-background-color: hsl(202, 11%, 50%);
+    --frost-color: hsla(0, 0%, 100%, 0.1);
+    --light-text-color: hsla(0, 0%, 100%, 0.5);
+    --shadow-color: 0deg 0% 0%;
+    --text-color: white;
   }
-}
+} */
 
 /* MOTION */
 @media (prefers-reduced-motion: no-preference) {
