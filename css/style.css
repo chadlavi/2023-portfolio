@@ -5,16 +5,18 @@
   --bkg-blue: hsl(214, 57%, 24%);
   --bkg-casebook-alt: hsl(178, 94%, 16%);
   --bkg-casebook: hsl(252, 38%, 28%);
-  --bkg-about: hsl(120, 24%, 28%);
+  --bkg-about: hsl(120, 24%, 18%);
   --bkg-work: hsl(30, 46%, 31%);
+  --nav-bkg-work: hsla(30, 46%, 31%, 0.5);
   --bkg-purple: hsl(251, 40%, 20%);
   --bkg-red: hsl(0, 38%, 27%);
-  --dark-frost-color: hsla(200, 15%, 8%, 0.1);
+  --dark-frost-color: hsla(200, 15%, 8%, 0.4);
   --default-background-color: hsl(201, 27%, 19%);
   --frost-color: hsla(0, 0%, 50%, 0.1);
   --light-text-color: hsla(0, 0%, 100%, 0.5);
   --shadow-color: 0deg 0% 10%;
   --text-color: hsl(36, 10%, 80%);
+  --nav-text-color: var(--text-color);
 
   --shadow-elevation-low: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.01),
     0.4px 0.8px 1.3px -0.2px hsl(var(--shadow-color) / 0.04),
@@ -39,7 +41,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   font-family: "Inter", Helvetica, sans-serif;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
   box-sizing: border-box;
   outline-color: (var(--text-color));
 }
@@ -81,7 +83,7 @@
   text-decoration: none;
   color: inherit;
   aspect-ratio: 1;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
@@ -96,13 +98,6 @@
   object-fit: cover;
   object-position: center;
   flex-grow: 1;
-  flex-basis: 10px;
-  margin-block-start: 1em;
-  filter: grayscale(100%);
-}
-.tile:hover > img,
-.tile:focus > img {
-  filter: grayscale(0%);
 }
 
 .shadow-low,
@@ -141,13 +136,8 @@ body {
   background-color: var(--bkg-work);
   color: var(--text-color);
   --frost-color: var(--dark-frost-color);
+  --nav-text-color: white;
 }
-
-/* NOT SURE IF NECESSARY ONCE IMAGES ARE NOT GREEKED */
-/* 
-.bkg-work nav {
-  background-color: var(--bkg-work);
-} */
 
 .bkg-about {
   background-color: var(--bkg-about);
@@ -207,6 +197,7 @@ nav a {
   font-weight: 500;
   opacity: 0.75;
   transition: opacity 0.1s ease;
+  color: var(--nav-text-color);
 }
 
 nav a:hover,
@@ -301,7 +292,6 @@ section figure img {
 
 figure figcaption {
   width: 90%;
-  font-style: italic;
   font-size: 0.75em;
   opacity: 0.8;
   text-align: center;
@@ -313,7 +303,7 @@ figure.responsive {
 }
 
 figure.responsive img {
-  max-height: 80vh;
+  max-height: 80vb;
   object-fit: contain;
 }
 
@@ -860,10 +850,10 @@ ul.plain {
   /* flex: 1; */
 }
 .text {
-  flex-basis: 34%;
+  flex-basis: 44%;
 }
 .image {
-  flex-basis: 64%;
+  flex-basis: 54%;
 }
 .center {
   text-align: center;
@@ -1034,11 +1024,11 @@ ul.plain {
     scroll-behavior: smooth;
   }
   body {
-    transition: background-color 1s ease, font-size 0.5s ease;
+    transition: background-color 750ms ease, font-size 0.5s ease;
   }
 
   nav {
-    transition: box-shadow 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    transition: box-shadow 0.2s ease, background 1s ease, transform 0.2s ease;
   }
 
   nav:hover {
@@ -1047,6 +1037,10 @@ ul.plain {
   figure img.stick {
     position: sticky;
     inset-block-start: 1rem;
+  }
+
+  img.rounded {
+    border-radius: 0.25rem;
   }
 
   .tile {

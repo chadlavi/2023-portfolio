@@ -1,3 +1,6 @@
+/** defines how far from the TOP of the viewport the item is considered to be scrolled in */
+const OFFSET_PERCENTAGE = 1 / 2;
+
 function isElementVisible(e) {
   const edges = e.getBoundingClientRect();
   const viewportWidth =
@@ -27,7 +30,7 @@ const changeBodyBackgroundColor = (color) => {
 };
 
 const checkAllSections = () => {
-  const scrollPoint = window.innerHeight / 2;
+  const scrollPoint = window.innerHeight * OFFSET_PERCENTAGE;
   const sections = [...document.querySelectorAll("section")];
   const visibleSections = sections.filter((s) => isElementVisible(s));
   visibleSections.forEach((section) => {
