@@ -2,21 +2,20 @@
   font-size: 18px;
 
   --bkg-arazoo: hsl(203 28% 30%);
-  --bkg-blue: hsl(214, 57%, 24%);
   --bkg-casebook-alt: hsl(178, 94%, 16%);
   --bkg-casebook: hsl(252, 38%, 28%);
   --bkg-about: hsl(120, 24%, 18%);
   --bkg-work: hsl(30, 46%, 31%);
   --nav-bkg-work: hsla(30, 46%, 31%, 0.5);
-  --bkg-purple: hsl(251, 40%, 20%);
-  --bkg-red: hsl(0, 38%, 27%);
   --dark-frost-color: hsla(200, 15%, 8%, 0.4);
   --default-background-color: hsl(201, 27%, 19%);
+  --background: var(--default-background-color);
   --frost-color: hsla(0, 0%, 50%, 0.1);
   --light-text-color: hsla(0, 0%, 100%, 0.5);
   --shadow-color: 0deg 0% 10%;
   --text-color: hsl(36, 10%, 80%);
   --nav-text-color: var(--text-color);
+  --button-border: hsla(36, 10%, 80%, 0.5);
 
   --shadow-elevation-low: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.01),
     0.4px 0.8px 1.3px -0.2px hsl(var(--shadow-color) / 0.04),
@@ -67,9 +66,13 @@
   color: var(--light-text-color);
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .card {
-  padding: 1.5rem;
-  border-radius: 8px;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -118,50 +121,41 @@ body {
 /* ------------ BACKGROUNDS ------------ */
 
 .bkg-default {
-  background-color: var(--default-background-color);
-  color: var(--text-color);
-}
-
-.bkg-blue {
-  background-color: var(--bkg-blue);
-  color: var(--text-color);
-}
-
-.bkg-red {
-  background-color: var(--bkg-red);
+  --background: var(--default-background-color);
+  background-color: var(--background);
   color: var(--text-color);
 }
 
 .bkg-work {
-  background-color: var(--bkg-work);
+  --background: var(--bkg-work);
+  background-color: var(--background);
   color: var(--text-color);
   --frost-color: var(--dark-frost-color);
   --nav-text-color: white;
 }
 
 .bkg-about {
-  background-color: var(--bkg-about);
-  color: var(--text-color);
-}
-
-.bkg-purple {
-  background-color: var(--bkg-purple);
+  --background: var(--bkg-about);
+  background-color: var(--background);
   color: var(--text-color);
 }
 
 .bkg-casebook {
-  background-color: var(--bkg-casebook);
+  --background: var(--bkg-casebook);
+  background-color: var(--background);
   color: var(--text-color);
 }
 
 .bkg-casebook-alt {
-  background-color: var(--bkg-casebook-alt);
+  --background: var(--bkg-casebook-alt);
+  background-color: var(--background);
   color: var(--text-color);
 }
 
 .bkg-arazoo {
+  --background: var(--bkg-arazoo);
   --frost-color: var(--dark-frost-color);
-  background-color: var(--bkg-arazoo);
+  background-color: var(--background);
   color: var(--text-color);
 }
 
@@ -203,6 +197,25 @@ nav a {
 nav a:hover,
 nav a:focus {
   opacity: 1;
+}
+
+a.button {
+  display: inline-block;
+  border-radius: 4rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid var(--button-border);
+  box-shadow: var(--shadow-elevation-low);
+  transition: box-shadow 0.15s ease-in;
+}
+
+a.button:hover,
+a.button:focus-visible {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+a.button:active {
+  box-shadow: none !important;
 }
 
 /* ------------ SECTIONS ------------ */
@@ -1031,7 +1044,8 @@ ul.plain {
     transition: box-shadow 0.2s ease, background 1s ease, transform 0.2s ease;
   }
 
-  nav:hover {
+  nav:hover,
+  a.button:hover {
     transform: scale(101%);
   }
   figure img.stick {
