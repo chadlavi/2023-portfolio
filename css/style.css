@@ -374,6 +374,15 @@ ul.plain {
   padding: 0;
 }
 
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+  letter-spacing: 0;
+  background-color: var(--frost-color);
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+
 /* ------------ LAYOUT HELPERS ------------ */
 
 .flex {
