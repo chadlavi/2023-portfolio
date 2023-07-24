@@ -199,6 +199,10 @@ nav a:focus {
   opacity: 1;
 }
 
+a.undecorated {
+  text-decoration: none;
+}
+
 a.button {
   display: inline-block;
   border-radius: 4rem;
@@ -318,6 +322,40 @@ figure.responsive {
 figure.responsive img {
   max-height: 80vb;
   object-fit: contain;
+}
+
+#image-overlay {
+  display: none;
+  position: fixed;
+  inline-size: 100vi;
+  block-size: 100vb;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--shadow-color) / 60%);
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.no-scroll {
+  block-size: 100vb;
+  inline-size: 100vi;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+#image-overlay img {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  cursor: zoom-out;
+}
+
+#image-overlay.visible {
+  display: flex;
 }
 
 iframe.video {
